@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1678047733 source:c:\users\joann\onedrive\pulpit\nauka\c++\p7\main.cpp
+	<iostream>
+	<vector>
+	<stdlib.h>
+	<string>
+
