@@ -86,6 +86,7 @@
 #include <string>
 
 void menuList();
+char upperCase(char);
 
 using namespace std;
 
@@ -99,10 +100,11 @@ int main()
     {
         menuList();
         cin >> wyborUzytkownika;
+        upperCase(wyborUzytkownika);
 
         switch(wyborUzytkownika) //funkcja sprawdzaj¹ca wybór u¿ytkownika
          {
-            case 'p': //wypisywanie zawartoœci wektora tworzonego przez u¿ytkownika
+            //wypisywanie zawartoœci wektora tworzonego przez u¿ytkownika
             case 'P':
             {
                 if(data.size() > 0)
@@ -203,4 +205,7 @@ void menuList() {
         cout << "L - Display the largest number" << endl;
         cout << "Q - Quit" << endl << endl;
         cout << "Enter your choice: ";
+}
+char upperCase(char wyborUzytkownika) {
+    return (char)toupper(wyborUzytkownika);
 }
